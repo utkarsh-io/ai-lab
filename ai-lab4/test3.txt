@@ -1,0 +1,26 @@
+% Sample test case 3
+% Cost <food-item> <value>
+C PM 1
+C DF 3
+C TC 2
+C GJ 5
+% Group size
+G 4
+% Inputs - books / notes. It ends with -1
+I 1 2 3 4 5 6 7 -1
+% Outputs - final outcome. It ends with -1
+O 19 -1
+% Assignment dependency list
+% A <id> <input1> <input2> <outcome> <Food-name>
+A 1 1 2 8 PM
+A 2 3 4 9 DF
+A 3 5 6 10 TC
+A 4 2 3 11 GJ
+A 5 8 9 12 DF
+A 6 10 11 13 PM
+A 7 12 13 14 TC
+A 8 8 10 15 PM
+A 9 11 5 16 DF
+A 10 14 15 17 GJ
+A 11 16 1 18 TC
+A 12 17 18 19 PM
